@@ -17,4 +17,4 @@ Data exploratory charts: Energy Load Over Time.png, Air Temperature Over Time.pn
 Learning Curve Charts: Plot_epochs_2.png, Plot_epochs_5.png, Plot_epochs_10.png, Plot_epochs_20.png, Plot_epochs_30.png,
 Predictions Chart: Predicted vs Energy Load.png\
 \
-}
+
