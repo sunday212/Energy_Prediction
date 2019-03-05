@@ -16,5 +16,5 @@ Datasets: Load_history.csv, temperature_history.csv\
 Data exploratory charts: Energy Load Over Time.png, Air Temperature Over Time.png, Energy Load vs temperature.png, Outlier Detection.png\
 Learning Curve Charts: Plot_epochs_2.png, Plot_epochs_5.png, Plot_epochs_10.png, Plot_epochs_20.png, Plot_epochs_30.png,
 Predictions Chart: Predicted vs Energy Load.png\
-\
+
 
