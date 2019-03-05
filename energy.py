@@ -3,7 +3,7 @@
 ########################################################################################
 
 import os
-path = '/Users/lisa/Desktop/blue_sky/My Learnings/Machine Learning/Mastering Machine Learning/Projects/04 Deep Learning/LSTM_energy'
+path = '/LSTM_energy'
 os.chdir(path)
 
 import pandas as pd

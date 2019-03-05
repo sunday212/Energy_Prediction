@@ -1,7 +1,5 @@
 ## Convert a Time Series to a Supervised Learning Problem ##
 
-# https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/
-
 from pandas import DataFrame
 from pandas import concat
  
@@ -39,25 +37,3 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 	return agg
 
 
-### Example - One - step univariate ###
-values = [x for x in range(10)]
-series_to_supervised(values,1)  # 1 lagged input time step...t-1 (input sequence of length 1)
-series_to_supervised(values,3)  # 3 lagged input time step...t-3, t-2, t-1
-
-### Example - Multi-step / Sequence Forecasting - univariate ###
-values = [x for x in range(10)]
-series_to_supervised(values, 2, 2)  # 2 lagged input time step sequence ...t-1    2 output time-step sequence forecasting t, t+1
-
-### Example - One time-step multi-variate/features ###
-raw = DataFrame()
-raw['ob1'] = [x for x in range(10)]
-raw['ob2'] = [x for x in range(50, 60)]
-values = raw.values
-series_to_supervised(values,1) # 1 lagged input time step...t-1
-
-### Example - Multi-step / Sequence Forecasting - multi-variate/features ###
-raw = DataFrame()
-raw['ob1'] = [x for x in range(10)]
-raw['ob2'] = [x for x in range(50, 60)]
-values = raw.values
-series_to_supervised(values, 3, 3) # 1 lagged input time step...t-1    3 output time-step sequence forecasting t, t+1, t+2
