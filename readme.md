@@ -1,11 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww15180\viewh7280\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 Title: Energy forecasting\
+Title: Energy Forecasting\
 Author: Lisa Mok\
 \
 Dataset: GEFCom2014\
@@ -17,9 +10,11 @@ Project Details: The script demonstrates the steps undertaken in the machine lea
 Acknowledgements: I would to thank Jason Brownlee of machinelearningmastery.com for his intuitive guide to machine learning which has enabled me to create usable scripts for implementing machine learning and getting results.\
 \
 \
-Scripts: energy_evaluate.py, energy_train.py\
 Language: Python 3.6\
-Dataset: Load_history.csv\
-Charts: XXXX\
-\
-}
+Main script: energy.py (calls script convert_supervised_learning.py courtesy of Jason Brownlee)\
+Datasets: Load_history.csv, temperature_history.csv\
+Data exploratory charts: Energy Load Over Time.png, Air Temperature Over Time.png, Energy Load vs temperature.png, Outlier Detection.png\
+Learning Curve Charts: Plot_epochs_2.png, Plot_epochs_5.png, Plot_epochs_10.png, Plot_epochs_20.png, Plot_epochs_30.png,
+Predictions Chart: Predicted vs Energy Load.png
+
+
