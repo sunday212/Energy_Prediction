@@ -1,4 +1,4 @@
-Title: Energy forecasting\
+Title: Energy Forecasting\
 Author: Lisa Mok\
 \
 Dataset: GEFCom2014\
