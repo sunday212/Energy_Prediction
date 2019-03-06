@@ -511,12 +511,12 @@ for i in range(repeats):
     model = lstm_model(timesteps, features, neurons, dropout, learning, momentum, decay, init, activation, activation_output, opt)
     model.fit(train_X, train_Y, validation_data = (test_X, test_Y), epochs = epochs, batch_size = batch, verbose =2)         
     predicted = model.predict(test_X)
-    predicted_rescaled = scaler.inverse_transform(predicted)[0:,0].tolist()[1:]            # Predicted energy usage (test set date range). Predicts one time-step ahead (to compare with actual, remove the 1st value)
+    predicted_rescaled = scaler.inverse_transform(predicted)[0:,0].tolist()[1:]            
 
-    actual = scaler.inverse_transform(test_Y)[:,0].tolist()[:-1]                            # Actual energy usage (to compare with predicted, remove the last value)
+    actual = scaler.inverse_transform(test_Y)[:,0].tolist()[:-1]                            
     
-    rmse = sqrt(mean_squared_error(actual, predicted_rescaled)) / all_y.mean()   # ( mean_squared_error / no of observations ) / mean (actual output values)
-    accuracy = 1 - rmse                                                         # Gives a zero to 1 accuracy measure
+    rmse = sqrt(mean_squared_error(actual, predicted_rescaled)) / all_y.mean()   
+    accuracy = 1 - rmse                                                         
     accuracy_all.append(accuracy)
     
     k = k +1
